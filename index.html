@@ -233,17 +233,20 @@
     <button type="button" class="exp b btn btn-outline-light">EXPERIENCE</button>
     <button onclick="edu_img()" type="button" class=" b btn btn-outline-light">EDUCATION</button>
     <button onclick="show_img()" type="button" class=" b btn btn-outline-light">CERTIFICATION</button>
-    <button type="button" class="pro b btn btn-outline-light">PROJECTS</button>
+    <button onclick="pro1_img()" type="button" class="pro b btn btn-outline-light">PROJECTS</button>
     <button onclick="remove_img()" type="button" class=" b btn btn-outline-light">OTHERS</button>
   </div>
 </div>
 
-
+<span class="details" ><p>"Hover Images for brief details"</p></span>
 <a  title="D.A.V. Co-op Sr.Sec School Khalari (10th)"> <img  class="a oth edu all images" src="images/dav1.jpg" alt="dav khalari"></a>
 <a  title="D.A.V Gandhinagar, Ranchi (+2)"> <img  class="a oth edu all images" src="images/dav gandhi1.jpg" alt=""></a>
-<a  title="SRM University"> <img  class="a oth edu all images-srm1" src="images/srm1.jpg" alt=""></a>
-<img  class="a oth cer all  images" src="images/sk-hack.jpg" alt="">
-<img  class="a oth cer all  images" src="images/sk-hack2.png" alt="">
+<a  title="SRM University (pursuing my Btech)"> <img  class="a oth edu all images-srm1" src="images/srm1.jpg" alt=""></a>
+<a title="Certificate space app"><img  class="a oth cer all  images" src="images/sk-hack.jpg" alt=""></a>
+<a title="Certificate"> <img  class="a oth cer all  images" src="images/sk-hack2.png" alt=""></a>
+<a title="Wesbite of Marine Debri Detector interface"> <img class="a pro1 images all oth" src="images/project1.jpg" alt=""></a>
+<a title="Interface of my college student social media details"> <img class="a pro1 images all oth" src="images/project2.jpg" alt=""></a>
+<a title="Drum kit website using event listener"> <img class="a pro1 images all oth" src="images/project3.jpg" alt=""></a>
 </div>
 
 <hr class="hr2">
@@ -273,7 +276,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="index.js" charset="utf-8"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 <script src="jquery.counterup.min.js"></script>
 <script>
   $(document).ready(function($){
@@ -304,6 +307,10 @@
     $(".cer").fadeIn(500);
   }
 
+  function pro1_img(){
+    $(".all").fadeOut("fast");
+    $(".pro1").fadeIn("500");
+  }
 
 
 

@@ -283,6 +283,7 @@ margin-bottom: 22px;
   width: 300px;
   height: 300px;
   transition: .5s ease;
+  margin:10px;
 }
 .images:hover{
   opacity: 0.5;
@@ -293,17 +294,27 @@ margin-bottom: 22px;
   height:300px;
   width:400px;
   transition: .5s ease;
+  margin:10px;
 }
 .images-srm1:hover{
   opacity: 0.5;
 }
 
+.pro1{
+  height:300px;
+  width:500px;
+  margin:10px;
+}
 
 
 .cer{
   height:300px;
   width:500px;
   margin-top: 20px;
+}
+
+.details{
+  font-size: 20px;
 }
 
 .b{
@@ -379,15 +390,21 @@ h6{
 
 /* mobile friendly */
 
-@media (max-width: 1028px) {
+@media (max-width: 1020px) {
 
   h1{
-    font-size: 50px;
+    font-size: 70px;
+    margin-left: 20%;
+    margin-right: 10%;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    text-overflow: ellipsis;
   }
   .text {
-    margin-top:43%;
+    margin-top:35%;
     margin-left: 27%;
-    font-size: 27px;
+    font-size: 40px;
   }
 
   .ts1{
@@ -418,5 +435,6 @@ h6{
   .portfolio{
     margin-left: 5%;
   }
+
 
 }
